@@ -2,7 +2,7 @@ version: '3'
 
 services:
   runner:
-    image: ghcr.io/$ORGANIZATION/acuity-actions:cicd-runner
+    image: ghcr.io/gitnastics/actions-runner:latest
     deploy:
       mode: replicated
       replicas: 1
