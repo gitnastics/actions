@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-ARG RUNNER_VERSION="2.285.0"
+ARG RUNNER_VERSION="2.283.3"
 
 RUN apt-get update -y && apt-get upgrade -y && useradd -m docker
 

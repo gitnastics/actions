@@ -64,6 +64,9 @@ do
 done
 
 eval $(docker-machine env runner-node-1)
+set -o allexport
+source .env
+set +o allexport
 docker stack deploy --compose-file=docker-compose.yml actions
 
 docker service scale actions_runner=$1

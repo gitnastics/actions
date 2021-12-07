@@ -10,5 +10,5 @@ services:
         constraints:
           - node.role == worker
     environment:
-      - ORGANIZATION_ACCESS_TOKEN=$ORGANIZATION_ACCESS_TOKEN
+      - ACCESS_TOKEN=$ACCESS_TOKEN
       - ORGANIZATION=$ORGANIZATION
